@@ -3,8 +3,17 @@ $(function() {
 // Your Code from here on down. Don't delete that line above!
   
 
+$(".about").click(function(){
+    $(".knob_container").css('transform', 'rotate(90deg)');
+});
 
+$(".parts").click(function(){
+    $(".knob_container").css('transform', 'rotate(180deg)');
+});
 
+$(".listen").click(function(){
+    $(".knob_container").css('transform', 'rotate(0deg)');
+});
 
 
 
