@@ -17,35 +17,64 @@ h1{
 
 a {
     text-decoration:none;
+    color:black;
 }
 
 .listen {
-    position:absolute;
-    display:inline;
-    top:53%;
-    left:68%;
+    position:relative;
+    top:200px;
+    left:100%;
     font-family: 'Righteous', cursive;
     font-size:30px;
+    cursor:pointer;
+
+}
+
+.listen:hover, .about:hover,.parts:hover {
+    color:red;
+    cursor:pointer;
+
+}
+
+.listen:active, .about:active,.parts:active {
+    color:#cc0000;
     cursor:pointer;
 
 }
 
 .about {
-    position:absolute;
-    display:inline;
-    top:90%;
-    left:42%;
+    position:relative;
+    top:380px;
+    width:100%;
     font-family: 'Righteous', cursive;
     font-size:30px;
     cursor:pointer;
+    text-align: center;
 
 }
 
-.parts {
+.wrapper {
     position:absolute;
-    display:inline;
-    top:53%;
-    left:20%;
+    text-align:center;
+    margin:300px;
+    font-family:helvetica;
+    font-size:20px;
+    width:90%;
+    white-space: nowrap;
+    overflow:hidden;
+    animation: animate_one 3s steps(400);
+}
+
+@keyframes animate_one {
+    0%{
+        width:0;
+    }
+}
+
+.parts {
+    position:relative;
+    top:170px;
+    left:-25%;
     font-family: 'Righteous', cursive;
     font-size:30px;
     cursor:pointer;
@@ -70,12 +99,27 @@ a {
 }
 
 .knob_container {
-    transform-origin: 40% 60%;
+    transform-origin: 50% ;
     width:300px;
     margin:auto;
-    padding-top:100px;
+    padding:10px;
+}
+
+
+.nav {
+    width:400px;
+    height:400px;
+    margin:auto;
 
 }
+
+.enter {
+    fill:green;
+    cursor:pointer;
+}
+
+
+
 
 
 

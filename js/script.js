@@ -3,17 +3,26 @@ $(function() {
 // Your Code from here on down. Don't delete that line above!
   
 
-$(".about").click(function(){
+$(".about").hover(function(){
+    $(".knob_container").css('transform', 'rotate(180deg)');
+
+});
+
+$(".parts").hover(function(){
+    $(".knob_container").css('transform', 'rotate(-90deg)');
+});
+
+$(".listen").hover(function(){
     $(".knob_container").css('transform', 'rotate(90deg)');
 });
 
-$(".parts").click(function(){
-    $(".knob_container").css('transform', 'rotate(180deg)');
-});
 
-$(".listen").click(function(){
-    $(".knob_container").css('transform', 'rotate(0deg)');
-});
+$(".listen, .parts, .about").mouseover(function() {
+    $('audio#key')[0].play()
+
+})
+
+
 
 
 
