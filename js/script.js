@@ -20,9 +20,17 @@ $(".listen").hover(function(){
 $(".listen, .parts, .about").mouseover(function() {
     $('audio#key')[0].play()
 
-})
+});
 
+$(".on").click(function(){
+    $(".light").toggleClass("clicked");
 
+ });
+
+$(".on").click(function(){
+    $(".record").toggleClass("off");
+
+ });
 
 
 

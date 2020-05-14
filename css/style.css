@@ -118,6 +118,270 @@ a {
     cursor:pointer;
 }
 
+.centercontainer {
+    width:100%;
+    margin:30px;
+    position:absolute;
+}
+
+.fourgrid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin:30px;
+    
+
+}
+
+.album {
+    display:block;
+    width:80%;
+    padding-bottom:10%;
+    background-color:black;
+    cursor: pointer;
+    z-index: 2;
+
+
+}
+
+
+.recorddisk {
+    position: relative;
+    width:80%;
+    padding-bottom:80%;
+    top:5px;
+
+    background-color:grey;
+    cursor: pointer;
+    border-radius:50%;
+    margin:auto;
+}
+
+
+
+
+.recorddisk:hover {
+  transform:translateX(3em);
+  transition: all .1s linear;
+}
+
+.player {
+    display:block;
+    position:relative;
+    width:800px;
+    height:500px;
+    background-color:red;
+    border-radius:20px;
+    margin:auto;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Loved+by+the+King';
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(80deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(192deg);
+  }
+}
+@keyframes spin-art {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+main {
+  max-height: 385px;
+  overflow: hidden;
+}
+.record-player {
+  height: 315px;
+  width: 450px;
+  background: #C0C0C0;
+  position: relative;
+  margin: 25px auto;
+  z-index: 0;
+  border-radius: 10px;
+ }
+
+.record-player .arm-assembly {
+  position: relative;
+  z-index: 200;
+  height: 75%;
+  top: 40px;
+  left: 150px;
+}
+.record-player .arm-assembly .center {
+  width: 60px;
+  height: 60px;
+  background: #969BA0;
+  position: absolute;
+  left: -80px;
+  top: -5px;
+  z-index: 199;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 1px rgba(33, 33, 33, 0.3), inset 0 0 0 0 #969BA0, inset 0 0 0 2px rgba(180, 180, 180, 0.7), inset 0 0 0 3px rgba(33, 33, 33, 0.3), inset 0 0 0 8px #969BA0, inset 0 0 0 10px rgba(180, 180, 180, 0.7), inset 0 0 0 11px rgba(33, 33, 33, 0.3), inset 0 0 0 18px #969BA0, inset 0 0 0 20px rgba(180, 180, 180, 0.7), inset 0 0 0 21px rgba(33, 33, 33, 0.3);
+}
+.record-player .arm {
+  position: absolute;
+  z-index: 200;
+  height: 100%;
+  left: 22px;
+  transform: rotate(-45deg);
+}
+.record-player .arm div {
+  background: #969BA0;
+  width: 6px;
+  position: absolute;
+}
+.record-player .arm .long {
+  height: 60%;
+  transform: rotate(10deg);
+  border-radius: 35% 35% 0 10%;
+  box-shadow: 0 0 5px 2px rgba(33, 33, 33, 0.35);
+}
+.record-player .arm .short {
+  height: 35%;
+  top: 58%;
+  left: 2px;
+  transform: rotate(-20deg);
+  border-radius: 0 10% 40% 40%;
+}
+
+.record-player .deck {
+  position: absolute;
+  top: 20px;
+  left: 145px;
+  height: 275px;
+  width: 275px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(230, 230, 230, 0.4), 1px 1px 5px 2px rgba(0, 0, 0, 0.9), -1px -1px 5px 2px rgba(0, 0, 0, 0.9);
+}
+.record-player .deck .needle {
+  height: 1.6%;
+  width: 1.6%;
+  border-radius: 50%;
+  position: absolute;
+  top: 49.2%;
+  left: 49.2%;
+  background: #e1e1e1;
+  z-index: 105;
+  
+}
+.record {
+  background: #222;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: relative;
+  z-index: 100;
+  box-shadow: inset 0 0 50px 15px rgba(33, 33, 33, 0.5);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 50% 50%;
+  animation: spin-art 3000ms linear infinite;
+}
+
+
+.record.off, .record.off .grooves div {
+  animation: none;
+  transform: translate(-50%, -50%) rotate(80deg);
+}
+.record .label {
+  background: #aaa;
+  height: 24%;
+  width: 24%;
+  position: absolute;
+  z-index: 200;
+  top: 38%;
+  left: 38%;
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px 3px rgba(33, 33, 33, 0.5), 0 0 7px 1px rgba(255, 255, 255, 0.1);
+}
+.record .label .hole {
+  background: #000;
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  border-radius: 50%;
+}
+
+.record .grooves {
+  position: absolute;
+  z-index: 150;
+  left: 50%;
+  top: 50%;
+  height: 0.5%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  width: 0.5%;
+}
+.record .grooves div {
+  animation: spin 10000ms linear infinite;
+  border: 0px solid transparent;
+  border-top: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.25);
+  height: 140%;
+  width: 140%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 50% 50%;
+}
+
+.controls{
+    width:150px;
+    height:70px;
+    position:relative;
+}
+
+.on {
+    position:relative;
+    background-color:red;
+    border:2px solid black;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    text-align: center;
+    top:5px;
+    left:20px;
+    cursor: pointer;
+}
+
+.on:focus {
+    outline:none;
+}
+
+.on:active {
+    background-color:purple;
+}
+
+.light {
+    position: relative;
+    background-color:red;
+    border-radius:50%;
+    width:10px;
+    height:10px;
+    border:3px solid black;
+    left:90px;
+    bottom:25px;
+}
+
+.clicked {
+    background-color:grey;
+}
+
+
+
+
 
 
 
