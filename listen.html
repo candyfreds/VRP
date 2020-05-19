@@ -20,15 +20,11 @@
 		<h1>LISTEN</h1>
 	</header>
 
-<audio loop id="static">
+<audio loop id="static" preload="none">
 	<source src="images/static.mp3" type="audio/mpeg">
 </audio>
 
 
-<script>
-  var audio = document.getElementById("static");
-  audio.volume = 5;
-</script>
 
 <main>
   <section class="record-player">
@@ -41,8 +37,8 @@
     </div>
 
     <section class="controls">
-    	<button class="on">ON</button>
-    	<section class="light"></section>
+      <button id="play" class="on">ON</button>
+      <section class="light"></section>
     </section>
 
     <div class="deck">
@@ -104,10 +100,22 @@
 
 	<div class="centercontainer">
 		<div class="fourgrid">
-			<div class="album"><div class="recorddisk"></div></div>
-			<div class="album"><div class="recorddisk"></div></div>
-			<div class="album"><div class="recorddisk"></div></div>
-			<div class="album"><div class="recorddisk"></div></div>
+			<div class="album">
+        <div class="recorddisk"></div>
+        <img class="cover" src="images/shins.jpg">
+      </div>
+			 <div class="album">
+        <div class="recorddisk"></div>
+        <img class="cover" src="images/grouplove.jpg">
+      </div>
+      <div class="album">
+        <div class="recorddisk"></div>
+        <img class="cover" src="images/icecream.jpg">
+      </div>
+      <div class="album">
+        <div class="recorddisk"></div>
+        <img class="cover" src="images/khaidreams.jpg">
+      </div>
 		</div>
 	</div>
 

@@ -22,17 +22,34 @@ $(".listen, .parts, .about").mouseover(function() {
 
 });
 
+
 $(".on").click(function(){
     $(".light").toggleClass("clicked");
-    $("audio#static")[0].play()
-
+    $(".record").toggleClass("recordplay");
+    
  });
 
-$(".on").click(function(){
-    $(".record").toggleClass("off");
 
- });
+var track = document.getElementById('static');
 
+var controlBtn = document.getElementById('play');
+
+function playPause() {
+    if (track.paused) {
+        track.play();
+        //controlBtn.textContent = "Pause";
+        controlBtn.className = "pause";
+    } else { 
+        track.pause();
+         //controlBtn.textContent = "Play";
+        controlBtn.className = "play";
+    }
+}
+
+controlBtn.addEventListener("click", playPause);
+track.addEventListener("ended", function() {
+  controlBtn.className = "play";
+});
 
 
 
