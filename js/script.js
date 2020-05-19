@@ -24,6 +24,7 @@ $(".listen, .parts, .about").mouseover(function() {
 
 $(".on").click(function(){
     $(".light").toggleClass("clicked");
+    $("audio#static")[0].play()
 
  });
 
@@ -31,6 +32,12 @@ $(".on").click(function(){
     $(".record").toggleClass("off");
 
  });
+
+
+
+
+
+
 
 
 
