@@ -30,6 +30,11 @@ $(".on").click(function(){
  });
 
 
+$(document).ready(function(){
+    $(".type").get(0).play();
+});
+
+
 var track = document.getElementById('static');
 
 var controlBtn = document.getElementById('play');
@@ -50,6 +55,7 @@ controlBtn.addEventListener("click", playPause);
 track.addEventListener("ended", function() {
   controlBtn.className = "play";
 });
+
 
 
 
