@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
 	<audio id="key">
 	  <source src="images/click.mp3" type="audio/mpeg">
 	</audio>
@@ -47,7 +48,7 @@
 
 <main> 
 
-
+<div class="space"></div>
 <section>
   <div class="outer">
     <div class="inner">FEB 19, 1878</div>
@@ -60,42 +61,94 @@ which was amplified through
 a small speaker.</div>
 </section>
 
-
-<section>
-  <div class="outer">
-  	<img src="images/pic1.png">
-  </div>
-</section>
+<img src="images/pic1.png" width="100%" height="auto">
 <section>
   <div class="outer">
     <div class="inner">FEB 1, 1887</div>
   </div>
+  <div class="history">The gramophone made in 1887 was made by Emile Berliner. Emile took Edison's original record player to the next level. The gramophone, was similar to the record player, but had better features. The gramophone could still play music or recordings, but it didn't use foil like the record player.</div>
+   <div class="history">The gramophone introduced vinyl, the disk that you see DJ's using on their turn tables. On the side of the gramophone, is a crank used to spin the vinyl that created the same noise as the record player.</div>
+</section>
+<img src="images/pic2.png" width="100%" height="auto">
 
-</section>
-</section>
-<section>
-  <div class="outer">
-    <div class="inner">This is Section 4</div>
-  </div>
-</section>
 <section>
   <div class="outer">
     <div class="inner">OCT 22, 1930</div>
   </div>
+  <div class="history">The Turntable, invented by Daniel Leland Cooley in the 1930s. The turntable, was not much of a hit when it was invented, but it sky rocketed in the 1970s. People called "Disk Jockeys", or what we call"DJs", used the turntables to play multiple songs at parties, concerts, and more.</div>
+   <div class="history">The turntable also invented a techniqe DJs used called scratching, when you move the vinyl disk back and forth. In the next coming decades, the turntables became huge, and DJing was taken to a whole new level!</div>
 </section>
-<section>
-  <div class="outer">
-    <div class="inner">This is Section 6</div>
-  </div>
-</section>
+<img src="images/pic3.png" width="100%" height="auto">
 
 
-	<script src="js/plugins/jquery.ScrollMagic.min.js"></script>
-	<script src="js/ScrollMagic.min.js"></script>
-	<!-- link for jquery -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  	<!-- link for your script file -->
-  	<script src="js/script.js"></script>
+<div class="btnwrapper">
+	<a href="listen.html">
+		<img class="listenbtn" src="images/arrow.png">
+		<div class="listenword">LISTEN</div>
+	</a>
+</div>
+
+
+<div class="btnwrapperparts">
+	<a href="parts.html">
+		<img class="partsbtn" src="images/arrow.png">
+		<div class="partsword">PARTS</div>
+	</a>
+</div>
+<div class="space"></div>
+
+	<div id="intro" data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
+		<h1><a href="https://github.com/Prinzhorn/skrollr">skrollr</a></h1>
+		<h2>parallax scrolling for the masses</h2>
+		<p>let's get scrollin' ;-)</p>
+		<p class="arrows">▼&nbsp;▼&nbsp;▼</p>
+	</div>
+
+	<div id="transform" data-500="transform:scale(0) rotate(0deg);" data-1000="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-1700="transform:scale(5) rotate(3240deg);opacity:0;">
+		<h2>transform</h2>
+		<p>scale, skew and rotate the sh** out of any element</p>
+	</div>
+
+	<div id="properties" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
+		<h2>all numeric properties</h2>
+		<p>width, height, padding, font-size, z-index, blah blah blah</p>
+	</div>
+
+	<div id="easing_wrapper" data-0="display:none;" data-3900="display:block;" data-4900="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-5900="background:rgba(0,0,0,1);color:rgb(255,255,255);" data-10000="top:0%;" data-12000="top:-100%;">
+		<div id="easing" data-3900="left:100%" data-4600="left:25%;">
+			<h2>easing?</h2>
+			<p>sure.</p>
+			<p>let me dim the <span data-3900="" data-4900="color[swing]:rgb(0,0,0);" data-5900="color:rgb(255,255,0);">lights</span> for this one...</p>
+			<p data-5900="opacity:0;font-size:100%;" data-6500="opacity:1;font-size:150%;">you can set easings for each property and define own easing functions</p>
+		</div>
+
+		<div class="drop" data-6500="left:15%;bottom:100%;" data-9500="bottom:0%;">linear</div>
+		<div class="drop" data-6500="left:25%;bottom[quadratic]:100%;" data-9500="bottom:0%;">quadratic</div>
+		<div class="drop" data-6500="left:35%;bottom[cubic]:100%;" data-9500="bottom:0%;">cubic</div>
+		<div class="drop" data-6500="left:45%;bottom[swing]:100%;" data-9500="bottom:0%;">swing</div>
+		<div class="drop" data-6500="left:55%;bottom[WTF]:100%;" data-9500="bottom:0%;">WTF</div>
+		<div class="drop" data-6500="left:65%;bottom[inverted]:100%;" data-9500="bottom:0%;">inverted</div>
+		<div class="drop" data-6500="left:75%;bottom[bounce]:100%;" data-9500="bottom:0%;">bounce</div>
+	</div>
+
+	<div id="download" data-10000="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(0,50,100);border-width:0px;" data-12000="top:10%;border-radius:2em;background:rgb(190,230,255);border-width:10px;">
+		<h2>the end</h2>
+		<p>by the way, you can also animate colors (you did notice this, didn't you?)</p>
+		<p><strong>Now get this thing on <a href="https://github.com/Prinzhorn/skrollr">GitHub</a> and spread the word, it's open source!</strong> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://prinzhorn.github.com/skrollr/" data-via="Prinzhorn">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+		<p>Check out more <a href="https://github.com/Prinzhorn/skrollr/tree/master/examples#examples">examples</a>.</p>
+		<p>Handcrafted by <a href="https://twitter.com/Prinzhorn" class="twitter-follow-button" data-show-count="false">Follow @Prinzhorn</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+	</div>
+
+
+<footer></footer>
+
+<!-- link for jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+<!-- link for your script file -->
+<script src="js/script.js"></script>
 
 
 </body>
