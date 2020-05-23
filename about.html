@@ -10,13 +10,25 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+	<audio autoplay id="type">
+    	<source src="images/type.mp3">
+	</audio>
 </head>
 <body>
 
+<script>
+var controller = new ScrollMagic.Controller();
 
-<audio autoplay id="type">
-    <source src="images/type.mp3">
-</audio>
+var scene = new ScrollMagic.Scene({
+    triggerElement:'.history'
+})
+.setClassToggle('.history', 'show')
+
+.addTo(controller);
+</script>
+
+
+
 
 
 	
