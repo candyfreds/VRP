@@ -634,6 +634,32 @@ section .controls{
     66% { opacity:0; }
     100% { opacity:1; }
 }
+.circles {
+    width:150px;
+    height:150px;
+    border:none;
+    background-color:#35ea97;
+    font-size:15px;
+    border-radius:50%;
+    font-family:helvetica;
+    color:#333333;
+    cursor:pointer;
+    margin:20px;
+}
+
+.circles:active {
+    background-color:#2abd79;
+}
+
+.circles:hover {
+    background-color:#EAC747;
+    cursor:pointer;
+}
+
+.circles:focus {
+    outline:none;
+
+}
 
 
 

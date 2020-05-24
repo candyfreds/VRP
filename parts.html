@@ -10,6 +10,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+		<!-- link for jquery -->
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
+  	<!-- link for your script file -->
+  	<script src="js/script.js"></script>
 </head>
 <body>
 
@@ -20,6 +27,65 @@
 		<h1>PARTS</h1>
 	</header>
 
+	  <section class="record-player">
+    <section class="controls">
+      <button id="play" class="on">ON</button>
+      <section class="light"></section>
+    </section>
+
+    <div class="arm-assembly">
+      <div class="center"></div>
+      <div class="arm">
+        <div class="long"></div>
+        <div class="short"></div>
+        <div class="cartridge"></div>
+      </div>
+    </div>
+
+
+    <div class="deck">
+      <div class="needle"></div>
+      <section class="record">
+        <audio class="music"></audio>
+        <div class="grooves">
+          <img src="images/scratches.png">
+        </div>
+        <div class="hole"></div>
+        <div class="label"></div>
+
+      </section>
+    </div>
+  </section>
+
+
+
+<button id="click" class="circles">SIT</button>
+			<button id="click_2" class="circles">SCAN</button>
+			<button id="click_3" class="circles">BREATHE</button>
+			<button id="click_4" class="circles">WANDER</button>
+
+
+			<div id="show" style="display: none;">
+				<h3 class="greyh3">Step 1: Sit</h3>
+				<p>Sit comfortably upright on a chair, feet on the floor, hands resting on your thighs. (If you prefer, you can sit on the floor.) Take two or three deep breaths, then close your eyes.</p>
+			</div>
+
+			<div id="show_2">
+				<h3 class="greyh3">Step 2: Scan</h3>
+				<p>Starting from the top of the head and moving down, mentally scan your body, noticing any tension in your muscles, places of comfort or discomfort, the feel of the floor beneath your feet. Begin to pay attention to the natural rhythm of your breath.</p>
+			</div>
+
+			<div id="show_3">
+				<h3 class="greyh3">Step 3: Breathe </h3>
+				<p>As you become more aware of your breath, follow the rising and falling sensation without changing it in any way, silently counting breaths.
+
+				Inevitably, your mind will wander. This is one of the first lessons of meditation. When you notice that a thought has distracted you, let go of it and gently return your attention to your breath. Over time, you'll learn to step back and just observe the thoughts. The same goes for sounds: Rather than trying to block them out, let them come and go.</p>
+			</div>
+
+			<div id="show_4">
+				<h3 class="greyh3">Step 4: Wander</h3>
+				<p>Take a few seconds to allow your mind to do whatever it wants. (You may find your mind is very quiet.) Noticing the sounds around you and bringing your attention back to the body, gently open your eyes.</p>
+			</div>
 
 
 
@@ -31,14 +97,9 @@
 
 
 
-	<!-- link for jquery -->
-	<script
-  	src="https://code.jquery.com/jquery-3.4.1.min.js"
-  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous"></script>
-  	<!-- link for your script file -->
-  	<script src="js/script.js"></script>
-  	<script src="js/jquery-ui.js"></script>
+
+
+
 
 </body>
 </html>

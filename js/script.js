@@ -56,6 +56,40 @@ track.addEventListener("ended", function() {
 });
 
 
+    $(document).ready(function(){
+        $('#show').hide()
+        $('#click').on('click', function () {
+            $('#show').toggle(1000);
+        });
+    });
+
+
+
+    $(document).ready(function(){
+        $('#show_2').hide()
+        $('#click_2').on('click', function () {
+            $('#show_2').toggle(1000);
+        });
+    });
+
+
+
+    $(document).ready(function(){
+        $('#show_3').hide()
+        $('#click_3').on('click', function () {
+            $('#show_3').toggle(1000);
+        });
+    });
+
+
+
+    $(document).ready(function(){
+        $('#show_4').hide()
+        $('#click_4').on('click', function () {
+            $('#show_4').toggle(1000);
+        });
+    });
+
 
 
 
