@@ -5,7 +5,7 @@ body {
   background-color:yellow;
   align-content: center;
   justify-content: center;
-  height:1000px;
+  height:800px;
   background-color:yellow;
 }
 
@@ -30,6 +30,7 @@ h2 {
 a {
   text-decoration:none;
   color:black;
+  flex:1;
 }
 
 .logo {
@@ -127,7 +128,7 @@ a {
 
 .history {
   text-align:center;
-  font-size:5vh;
+  font-size:80%;
   color:black;
   font-family: 'Rokkitt', serif;
   line-height: 30px;
@@ -166,10 +167,11 @@ section {
 position: relative;
 font-family: 'Righteous', cursive;
 font-size:10vh;
+color:white;
   
 }
 .outer {
-  border-bottom: solid white 2px;
+  border-bottom: solid black 5px;
 }
 
 
@@ -218,11 +220,13 @@ div.album:hover .recorddisk {
 .record-player {
   height: 350px;
   width: 450px;
-  background: black;
+  background: blue;
   position: relative;
-  margin: 25px auto;
+  margin: auto;
   z-index: 0;
   border-radius: 10px;
+  margin-top:50px;
+  margin-bottom:30px;
 }
 
 .record-player .arm-assembly {
@@ -236,7 +240,7 @@ div.album:hover .recorddisk {
 .record-player .arm-assembly .center {
   width: 40px;
   height: 40px;
-  background: white;
+  background: #00ff00;
   position: absolute;
   left: -75px;
   top: 8px;
@@ -253,7 +257,7 @@ div.album:hover .recorddisk {
 }
 
 .record-player .arm div {
-  background: orange;
+  background: #ff00ff;
   width: 6px;
   position: absolute;
 }
@@ -288,7 +292,7 @@ div.album:hover .recorddisk {
   height: 275px;
   width: 275px;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px rgba(111, 204, 221), 1px 1px 5px 2px rgba(0, 0, 0, 0.9), -1px -1px 5px 2px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 0 10px rgba(247, 147, 30), 1px 1px 5px 2px rgba(0, 0, 0, 0.9), -1px -1px 5px 2px rgba(0, 0, 0, 0.9);
 }
 
 .record-player .deck .needle {
@@ -309,7 +313,6 @@ div.album:hover .recorddisk {
   border-radius: 50%;
   position: relative;
   z-index: 100;
-  position: absolute;
   left: 50%;
   top: 50%;
   transform-origin: 50% 50%;
@@ -324,7 +327,6 @@ div.album:hover .recorddisk {
   border-radius: 50%;
   position: relative;
   z-index: 100;
-  position: absolute;
   left: 50%;
   top: 50%;
   transform-origin: 50% 50%;
@@ -337,7 +339,7 @@ div.album:hover .recorddisk {
 }
 
 .record .label {
-  background: red;
+  background: #00a99d;
   height: 24%;
   width: 24%;
   position: absolute;
@@ -367,8 +369,8 @@ div.album:hover .recorddisk {
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
   width: 0.5%;
-  width:280px;
-  height:280px;
+  width:250px;
+  height:250px;
 }
 
 
@@ -420,7 +422,7 @@ section .controls{
 
 .on {
   position:relative;
-  background-color:red;
+  background-color:#71ccd8;
   border:2px solid black;
   border-radius:50%;
   width:50px;
@@ -430,6 +432,12 @@ section .controls{
   left:20px;
   cursor: pointer;
 }
+
+.on img {
+  height:30px;
+  width:30px;
+}
+
 
 .on:focus {
   outline:none;
@@ -487,7 +495,7 @@ section .controls{
 .wrapper {
   margin:auto;
   width:480px;
-  height:500px;
+  height:300px;
   position:relative;
 }
 
@@ -499,7 +507,7 @@ section .controls{
   text-align: center;
   margin:auto;
   padding-top:30px;
-  font-family:helvetica;
+  font-family: 'Rokkitt', serif;
   padding-top:5px;
   padding-bottom:5px;
 }
@@ -600,29 +608,22 @@ section .controls{
 }
 
 .btnwrapper {
-  margin-top:20px;
   width:100px;
   height:60px;
   position:absolute;
   right:60px;
   transition: .2s ease-in-out;
   cursor:pointer;
-  animation: 1s ease 1s normal forwards 1 fadeIn;
-  animation-delay: 12s;
-  opacity:0;
+
 }
 
 .btnwrapperparts {
-  margin-top:20px;
   width:100px;
   height:60px;
   position:absolute;
   left:60px;
   transition: .2s ease-in-out;
   cursor:pointer;
-  animation: 1s ease 1s normal forwards 1 fadeIn;
-  animation-delay: 12s;
-  opacity:0;
 }
 
 .btnwrapper:hover, .btnwrapperparts:hover{
@@ -634,30 +635,157 @@ section .controls{
     66% { opacity:0; }
     100% { opacity:1; }
 }
-.circles {
-    width:150px;
-    height:150px;
-    border:none;
-    background-color:#35ea97;
-    font-size:15px;
-    border-radius:50%;
-    font-family:helvetica;
-    color:#333333;
-    cursor:pointer;
-    margin:20px;
+
+
+
+
+/*PARTS*/
+
+
+
+
+.onbtn img {
+  height:50px;
+  width:50px;
 }
 
-.circles:active {
-    background-color:#2abd79;
+.onbtn {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: auto;
+    background-color:#71ccd8;
+    text-align: center;
+    display:block;
+    padding:0;
+    top:0;
+    left:0;
+    color:black;
+    border:3px solid black;
+
+
 }
 
-.circles:hover {
-    background-color:#EAC747;
-    cursor:pointer;
+.onbtn:focus {
+  outline:none;
 }
 
-.circles:focus {
-    outline:none;
+.icon h2 {
+  font-size:30px;
+}
+
+.icon {
+  width:auto;
+  position:relative;
+  padding:10px;
+}
+
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6 {
+  display:grid;
+  grid-template-columns: 150px 200px;
+  column-gap: 5px;
+  justify-content:center;
+  align-content: center;
+  margin-top:20px;
+  margin-bottom:20px;
+  background-color:red;
+  width:500px;
+  margin-left:auto;
+  margin-right:auto;
+  height:200px;
+
+}
+
+h2.bioname {
+  text-align:left;
+  margin-bottom:20px;
+  color:white;
+}
+
+
+.description {
+  margin-top:10px;
+  text-align:left;
+  color:white;
+  font-family: 'Rokkitt', serif;
+  line-height:20px;
+}
+
+div .platter {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin:auto;
+  background-color:orange;
+}
+
+.recordwhite {
+  background: white;
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  margin:auto;
+}
+
+
+
+.recordwhite .artistlabel {
+  background: #00a99d;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  z-index: 200;
+  top: 38%;
+  left: 38%;
+  border-radius: 50%;
+
+}
+
+
+.lines img {
+  position: absolute;
+  z-index: 150;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  width:80px;
+  height:80px;
+}
+
+.redcircle {
+  height:70px;
+  width:70px;
+  background-color:#00a99d;
+  border-radius: 50%;
+  margin:auto;
+}
+
+.greencircle {
+  height:40px;
+  width:40px;
+  background-color:#00ff00;
+  border-radius: 50%;
+  margin:auto;
+}
+
+.stylis img {
+  height:100px;
+  width:auto;
+  margin-left:20%;
+  position: absolute;
+}
+
+.recordarm img {
+  height:120px;
+  width:auto;
+  margin-left:10%;
+  position: absolute;
+  transform: rotate(-100deg);
+  transform-origin: 50% 50%;
+}
+
+#yellowhover:hover {
+  background-color:yellow;
+  box-shadow: 0 0 25px orange, 0 0 20px purple;
 
 }
 

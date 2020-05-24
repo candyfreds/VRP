@@ -9,7 +9,9 @@
 	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+	<link rel='dns-prefetch' href='https:////fonts.googleapis.com' />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -18,6 +20,7 @@
 		<div class="logo"><a href="index.html"><img src="images/logo.svg"></a></div>
 		<a href="index.html"><div class="wordmark">VRP</div></a>
 		<h1>LISTEN</h1>
+    <h2>Try out the record player below!</h2>
 	</header>
 
 <audio loop id="static" preload="none">
@@ -41,7 +44,7 @@
 <main>
   <section class="record-player">
     <section class="controls">
-      <button id="play" class="on">ON</button>
+      <button id="play" class="on"><img src="images/playicon.png"></button>
       <section class="light"></section>
     </section>
 
@@ -101,6 +104,19 @@
 		</div>
 	</div>
 
+<div class="btnwrapper">
+  <a href="parts.html">
+    <img class="listenbtn" src="images/arrow.png">
+    <div class="listenword">PARTS</div>
+  </a>
+</div>
+
+<div class="btnwrapperparts">
+  <a href="index.html">
+    <img class="partsbtn" src="images/arrow.png">
+    <div class="partsword">HOME</div>
+  </a>
+</div>
 
 
 
@@ -112,14 +128,12 @@
 
 
 
-	<!-- link for jquery -->
-	<script
-  	src="https://code.jquery.com/jquery-3.4.1.min.js"
-  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous"></script>
-  	<!-- link for your script file -->
-  	<script src="js/script.js"></script>
-  	<script src="js/jquery-ui.js"></script>
+
+  <!-- link for jquery -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- link for your script file -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
