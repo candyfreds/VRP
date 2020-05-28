@@ -60,28 +60,28 @@ a {
 .listen {
   position:relative;
   top:200px;
-  left:100%;
+  left:340px;
   font-family: 'Righteous', cursive;
-  font-size:30px;
+  font-size:25px;
   cursor:pointer;
 }
 
 .about {
   position:relative;
-  top:380px;
+  top:300px;
   width:100%;
   font-family: 'Righteous', cursive;
-  font-size:30px;
+  font-size:25px;
   cursor:pointer;
   text-align: center;
 }
 
 .parts {
   position:relative;
-  top:170px;
-  left:-25%;
+  top:175px;
+  left:-6%;
   font-family: 'Righteous', cursive;
-  font-size:30px;
+  font-size:25px;
   cursor:pointer;
 }
 
@@ -97,9 +97,10 @@ a {
 
 .knob_container {
   transform-origin: 50% ;
-  width:300px;
+  width:250px;
   margin:auto;
   padding:10px;
+
 }
 
 .nav {
