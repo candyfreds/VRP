@@ -17,7 +17,7 @@ $(".listen").hover(function(){
 
 
 $(".listen, .parts, .about").mouseover(function() {
-    $('audio#key')[0].play()
+    $('audio#key')[0].play();
 
 });
 
@@ -32,6 +32,50 @@ $(".on").click(function(){
 $(document).ready(function(){
     $(".type").get(0).play();
 });
+
+$('#shinssong').click(function(){
+        if ($('audio#player')[0].paused == false ){
+          $('audio#player')[0].pause()
+          $('audio#player')[0].currentTime = 0
+        } else {
+          $('source').attr('src', 'images/shinssong.mp3')
+          $('audio#player')[0].load()         
+          $('audio#player')[0].play()
+        }
+      })
+
+$('#grouplove').click(function(){
+        if ($('audio#player')[0].paused == false ){
+          $('audio#player')[0].pause()
+          $('audio#player')[0].currentTime = 0
+        } else {
+          $('source').attr('src', 'images/grouplovesong.mp3')
+          $('audio#player')[0].load()         
+          $('audio#player')[0].play()
+        }
+      })
+
+$('#icecream').click(function(){
+        if ($('audio#player')[0].paused == false ){
+          $('audio#player')[0].pause()
+          $('audio#player')[0].currentTime = 0
+        } else {
+          $('source').attr('src', 'images/icecreamsong.mp3')
+          $('audio#player')[0].load()         
+          $('audio#player')[0].play()
+        }
+      })
+
+$('#khaidreams').click(function(){
+        if ($('audio#player')[0].paused == false ){
+          $('audio#player')[0].pause()
+          $('audio#player')[0].currentTime = 0
+        } else {
+          $('source').attr('src', 'images/dreamssong.mp3')
+          $('audio#player')[0].load()         
+          $('audio#player')[0].play()
+        }
+      })
 
 
 

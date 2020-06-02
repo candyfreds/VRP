@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Project One Template - Homepage</title>
+	<title>Virtual Record Player - Listen</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -11,12 +11,13 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel='dns-prefetch' href='https:////fonts.googleapis.com' />
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
 	<header>
-		<!-- header, h1, logo etc content -->
 		<div class="logo">
       <a href="index.html">
         <img src="images/dial.svg" alt="Knob">
@@ -27,21 +28,14 @@
     <h2>Try out the record player below!</h2>
 	</header>
 
-<audio loop id="static" preload="none">
-	<source src="images/static.mp3" type="audio/mpeg">
-</audio>
-<audio id="shins" preload="none">
+	<audio id="player">
+  <source src="images/static.mp3" type="audio/mpeg">
   <source src="images/shinssong.mp3" type="audio/mpeg">
-</audio>
-<audio id="static" preload="none">
   <source src="images/grouplovesong.mp3" type="audio/mpeg">
-</audio>
-<audio id="static" preload="none">
   <source src="images/icecreamsong.mp3" type="audio/mpeg">
-</audio>
-<audio id="static" preload="none">
   <source src="images/dreamssong.mp3" type="audio/mpeg">
-</audio>
+  </audio>
+
 
 
 
@@ -61,7 +55,6 @@
       </div>
     </div>
 
-
     <div class="deck">
       <div class="needle"></div>
       <section class="record">
@@ -71,20 +64,11 @@
         </div>
         <div class="hole"></div>
         <div class="label"></div>
-
       </section>
     </div>
   </section>
 
 	
-
-
-
-
-
-
-
-
 
 
 	<div class="centercontainer">
@@ -93,15 +77,15 @@
         <div class="recorddisk"></div>
         <img class="cover1" src="images/shins.jpg" alt="The Shins">
       </div>
-			 <div class="album">
+			 <div id="grouplove" class="album">
         <div class="recorddisk"></div>
         <img class="cover2" src="images/grouplove.jpg" alt="Grouplove">
       </div>
-      <div class="album">
+      <div id="icecream" class="album">
         <div class="recorddisk"></div>
         <img class="cover3" src="images/icecream.jpg" alt="The band icecream">
       </div>
-      <div class="album">
+      <div id="khaidreams" class="album">
         <div class="recorddisk"></div>
         <img class="cover4" src="images/khaidreams.jpg" alt="Khai dreams">
       </div>
