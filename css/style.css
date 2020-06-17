@@ -2,7 +2,7 @@
   /* BASICS */
 
   body {
-  background-color:yellow;
+  background-color:#f2d768;
   align-content: center;
   justify-content: center;
   height:800px;
@@ -63,8 +63,9 @@
   top:200px;
   left:340px;
   font-family: 'Righteous', cursive;
-  font-size:25px;
+  font-size:30px;
   cursor:pointer;
+  letter-spacing: .5px;
   }
 
   .about {
@@ -72,18 +73,20 @@
   top:300px;
   width:100%;
   font-family: 'Righteous', cursive;
-  font-size:25px;
+  font-size:30px;
   cursor:pointer;
   text-align: center;
+  letter-spacing: .5px;
   }
 
   .parts {
   position:relative;
   top:175px;
-  left:-6%;
+  left:-10%;
   font-family: 'Righteous', cursive;
-  font-size:25px;
+  font-size:30px;
   cursor:pointer;
+  letter-spacing: .5px;
   }
 
   .listen:hover, .about:hover,.parts:hover {
@@ -130,13 +133,15 @@
 
   .history {
   text-align:center;
-  font-size:80%;
+  font-size:85%;
   color:black;
   font-family: 'Rokkitt', serif;
   line-height: 30px;
   margin-left:80px;
   margin-right:80px;
   margin-top:20px;
+  width:60%;
+  letter-spacing: .5px;
   }
 
   .space {
@@ -153,7 +158,7 @@
   justify-content: center;
   font-size: 24px;
   margin:0;
-  background-color:red;
+  background-color:#f7941d;
   position: sticky;
 
   }
@@ -193,6 +198,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 10px;
   margin:auto;
+  margin-left:50px;
   }
 
   .cover1, .cover2, .cover3, .cover4 {
@@ -570,8 +576,8 @@
   justify-content:center;
   transform:rotate(180deg);
   margin:auto;
-
-  }
+}
+  
 
   .partsbtn {
   position:absolute;
@@ -711,6 +717,7 @@
   color:white;
   font-family: 'Rokkitt', serif;
   line-height:20px;
+  letter-spacing: .5px;
   }
 
   div .platter {
